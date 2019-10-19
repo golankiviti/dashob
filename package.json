@@ -43,10 +43,16 @@
   "devDependencies": {
     "@rescripts/cli": "^0.0.12",
     "@rescripts/rescript-env": "^0.0.10",
+    "babel-jest": "^24.9.0",
     "concurrently": "^4.1.2",
     "cross-env": "^6.0.0",
     "electron": "^6.0.10",
     "electron-builder": "^21.2.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "jest-enzyme": "^7.1.1",
+    "jest-puppeteer": "^4.3.0",
+    "puppeteer": "^1.20.0",
     "wait-on": "^3.3.0"
   }
 }
