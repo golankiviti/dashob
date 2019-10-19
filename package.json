@@ -22,6 +22,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:integration": "jest -c jest.integration.config.js",
+    "test:integrationWatch": "jest -c jest.integration.config.js --watchAll",
     "eject": "react-scripts eject",
     "electron-dev": "concurrently \"cross-env BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron .\""
   },
