@@ -1,0 +1,7 @@
+$add-tab-button-width: 32px; // same as in the TabsContainer - 24px + 4px margin left + 4px margin right
+
+.root {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.1);
+}

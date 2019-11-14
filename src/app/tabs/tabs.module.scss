@@ -1,0 +1,7 @@
+@import './tabsContainer.module.scss';
+
+.container {
+    display: flex;
+    max-width: calc(100% - #{$add-tab-button-width});
+    overflow-x: auto;
+}
