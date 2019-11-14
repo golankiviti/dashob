@@ -1,0 +1,43 @@
+$tab-width: 160px;
+$tab-min-width: 24px;
+
+.root {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    width: $tab-width;
+    max-width: $tab-width;
+    min-width: $tab-min-width;
+    white-space: nowrap;
+    font-size: 14px;
+    position: relative;
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.5);
+        transition-duration: 0.1s;
+        transition-timing-function: ease-in-out;
+        cursor: context-menu;
+    }
+
+    &.active {
+        background: white;
+        &:before {
+            height: 0px;
+        }
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        right: 0;
+        height: 50%;
+        width: 1px;
+        border-right: 1px solid black;
+    }
+
+}
+
+.name {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

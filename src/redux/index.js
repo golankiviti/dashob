@@ -3,15 +3,17 @@ import { persistStore, persistReducer } from 'redux-persist';
 import immutableTransform from 'redux-persist-transform-immutable'
 import storage from 'redux-persist/lib/storage' // defaults to localStorage for web and AsyncStorage for react-native
 import { createStore } from 'redux';
-import tabs from './tabs/reducer';
+import boards from './boards/reducer';
+import activeTab from './activeTab/reducer'
 
 const rootReducer = combineReducers({
-    tabs
+    boards,
+    activeTab
 });
 
 const persistConfig = {
     transforms: [immutableTransform({
-        whitelist: ['tabs']
+        whitelist: ['boards', 'activeTab']
       })],
     key: 'root',
     storage,
